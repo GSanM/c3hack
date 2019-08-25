@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Work+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Exo:800|Montserrat:700|Raleway:800|Roboto:900&display=swap');
 
 login-component-content {
     height: 100%;
@@ -23,10 +22,6 @@ app-login-form {
         }
     }
 }
-
-//-------------------------
-//COR de Fundo #662E93 (ROXO)
-//COR secundaria #FDEC08 (AMARELO)
 
 ion-content, ion-item {
 --background: #E5C5EA;
@@ -160,15 +155,15 @@ form {
 
 h2 { 
     margin: 0 auto;
-    font-family: 'Roboto', sans-serif !important;
+    font-family: 'Raleway', sans-serif !important;
 }
 
 ion-item, ion-card {
     --background: white !important;
-    font-family: 'Roboto', sans-serif !important;
+    
 }
 
 .match {
     --background: #E5C5EA !important;
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }

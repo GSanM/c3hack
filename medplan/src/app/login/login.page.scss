@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Exo:800|Montserrat:700|Raleway:800|Roboto:900&display=swap');
+
 login-component-content {
     height: 100%;
     position: relative;
@@ -79,6 +81,7 @@ color: #662E93;
 
 /* Shared */
 .loginBtn {
+    font-family: 'Montserrat', sans-serif;
     box-sizing: border-box;
     position: relative;
     /* width: 13em;  - apply for fixed size */

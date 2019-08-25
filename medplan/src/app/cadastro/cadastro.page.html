@@ -15,12 +15,12 @@
         <form [formGroup]="form" (ngSubmit)="cadastro(form)" method="post">
           <ion-item>
             <ion-label class="label-form" position="floating">Nome</ion-label>
-            <ion-input class="input-form" formControlName="name" name="fName" value="{{ user.firstName }}"></ion-input>
+            <ion-input class="input-form" formControlName="name" name="fName"></ion-input>
           </ion-item>
 
           <ion-item>
             <ion-label class="label-form" position="floating">Sobrenome</ion-label>
-            <ion-input class="input-form" formControlName="surname" name="lName" value="{{ user.lastName }}"></ion-input>
+            <ion-input class="input-form" formControlName="surname" name="lName"></ion-input>
           </ion-item>
 
           <ion-radio-group>
@@ -61,7 +61,7 @@
 
           <ion-item>
             <ion-label class="label-form" position="floating">Email</ion-label>
-            <ion-input class="input-form" formControlName="email" name="email" value="{{ user.email }}"></ion-input>
+            <ion-input class="input-form" formControlName="email" name="email"></ion-input>
           </ion-item>
 
           <ion-item>
