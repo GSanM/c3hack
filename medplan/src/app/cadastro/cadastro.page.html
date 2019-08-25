@@ -1,0 +1,80 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-row>
+        <ion-icon (click)="clickOnLogin()" name="arrow-back" color="dark"></ion-icon>
+      <img style="margin:0 auto;" src="../../../assets/img/logo_colorido.png" class="start" width="150" alt="eutrampo-logo">
+  </ion-row>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-grid>
+    <ion-row>
+      <ion-col class="ion-margin">
+
+        <form [formGroup]="form" (ngSubmit)="cadastro(form)" method="post">
+          <ion-item>
+            <ion-label class="label-form" position="floating">Nome</ion-label>
+            <ion-input class="input-form" formControlName="name" name="fName" value="{{ user.firstName }}"></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-label class="label-form" position="floating">Sobrenome</ion-label>
+            <ion-input class="input-form" formControlName="surname" name="lName" value="{{ user.lastName }}"></ion-input>
+          </ion-item>
+
+          <ion-radio-group>
+            <ion-list-header style="background-color: white">
+              <ion-label style="color:black;">Gênero</ion-label>
+            </ion-list-header>
+            <ion-row>
+                <ion-col>
+                  <ion-item>
+                    <ion-label style="color:black;">Masculino</ion-label>
+                    <ion-radio mode="md" item-left slot="start" color="secondary" value="masculino" checked></ion-radio>
+                  </ion-item>
+                </ion-col>
+                
+                <ion-col>
+                  <ion-item>
+                    <ion-label style="color:black;">Feminino</ion-label>
+                    <ion-radio mode="md" item-left slot="start" color="secondary" value="feminino"></ion-radio>
+                  </ion-item>
+                </ion-col>
+            </ion-row>
+          </ion-radio-group>
+
+          <ion-item>
+            <ion-label class="label-form" position="floating">CPF</ion-label>
+            <ion-input class="input-form" name="cpf" formControlName="cpf" [brmasker]="{person: true}"></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-label class="label-form" position="floating">RG</ion-label>
+            <ion-input class="input-form" formControlName="rg" name="rg"></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-label class="label-form" position="floating">Celular</ion-label>
+            <ion-input class="input-form" formControlName="cel" name="celular" [brmasker]="{phone: true}"></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-label class="label-form" position="floating">Email</ion-label>
+            <ion-input class="input-form" formControlName="email" name="email" value="{{ user.email }}"></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-label class="label-form" position="floating">Senha</ion-label>
+            <ion-input class="input-form" type="password" formControlName="password" name="password"></ion-input>
+          </ion-item>
+          <br>
+          <ion-button id="cadastro" type="submit" expand="block" color="secondary" (click)="clickOnComparacao()">Crie uma conta</ion-button>
+        </form>
+        
+        <a class="teste" href="/">Já possui uma conta?</a>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>

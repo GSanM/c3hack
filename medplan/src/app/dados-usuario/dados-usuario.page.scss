@@ -1,0 +1,151 @@
+ion-content {
+    --ion-background-color: white;
+}
+
+ion-button#Foto{
+    height: 50px;
+    margin-left: 10px;
+    --border-color: #662E93;
+    margin-top: 65px;
+    width: 200px;
+}
+
+h1.Procurar{
+    color:#743D77; 
+    font-size: 60%; 
+    font-weight: 750;
+    margin-bottom: 18px;
+    margin-right: 7%;
+}
+
+img.foto{
+    margin-top: 15px;
+    float: left;
+    height: 100px;
+    margin-left: 34.5px;
+    width: 100px;
+    border-radius: 5px;
+}
+
+ion-title{
+    float:left;
+    margin-top: 3px;
+    color: #662e92;
+    font-weight: 700;
+}
+
+ion-icon{
+    margin-left: 4%;
+    font-size: 175%;
+    float:left;
+}
+h1.titulo{
+    color: black;
+    font-size: 60%;
+    margin-top: auto;
+    font-weight: 500;
+    margin-bottom: 2%;
+    margin-right: 0%;
+}
+
+
+ion-input{
+    --placeholder-color: black;
+    --placeholder-font-weight: 40px;
+    --padding-bottom: 1%;
+    --color: black;	
+}
+
+ion-item{
+    --border-color: white;
+    margin-left: 4%;
+    margin-right: 4%;
+    padding-top: 2.5%;
+}
+
+ion-col{
+    padding-top: 1%;
+}
+
+ion-content{
+    background-color: secondary;
+}
+
+ion-list{
+    padding-top: 0%;
+}
+
+ion-checkbox{
+    margin-left: 10%;
+    margin-top: 3%;
+}
+
+ion-row#teste a{
+    height: 10px;
+    width: 65px;
+}
+ion-row#gota{
+    height: 200px;
+    width: 65px;
+}
+ion-row#espaço{
+    height: 50px;
+    width: 65px;
+}
+
+h1.declaro{
+    color:white; 
+    font-size: 60%; 
+    margin-left: 2.5%;
+    margin-top: 4.25%;
+}
+
+a, link {
+    color: #743D77; 
+    background-color: transparent; 
+    margin-left: 0.75%;
+    font-size: 60%;
+    margin-top: 4%;
+}
+
+.sc-ion-input-md-h { //tira espaço entre nome e placeholder 
+    --padding-top: 0px;
+}
+
+ion-button#Salvar{
+    height: 40px;
+    margin-left: 105px;
+    --border-color: rgb(178, 145, 106);
+    margin-top: 7px;
+    width: 150px;
+}
+img.gota{
+    margin-top: 5px;
+    float: left;
+    height: 25px;
+    margin-left: 250px;
+    width: 50px;
+    border-radius: 5px;
+}
+
+img.gota2{
+    float: left;
+    height: 15px;
+    margin-left: auto;
+    width: 30px;
+    border-radius: 5px;
+}
+ion-col#col-fim{
+    padding-top: 1%;
+}
+ion-col#col-salvar{
+    padding-top: 1%;
+}
+h1.Salvar{
+    color:#662e92; 
+    font-size: 80%; 
+    font-weight: 750;
+    margin-bottom: 17px;
+    margin-right: 7%;
+    letter-spacing: normal;
+}

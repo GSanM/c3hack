@@ -4,8 +4,14 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
-  }
+    redirectTo: 'login', 
+    pathMatch: 'full'
+  },
+  { path: 'cadastro', loadChildren: './cadastro/cadastro.module#CadastroPageModule' },
+  { path: 'login', loadChildren: './login/login.module#LoginPageModule' },
+  { path: 'dados-usuario', loadChildren: './dados-usuario/dados-usuario.module#DadosUsuarioPageModule' },
+  { path: 'recomendacao', loadChildren: './recomendacao/recomendacao.module#RecomendacaoPageModule' },
+  { path: 'comparacao', loadChildren: './comparacao/comparacao.module#ComparacaoPageModule' }
 ];
 @NgModule({
   imports: [
